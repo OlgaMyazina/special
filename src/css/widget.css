@@ -1,0 +1,665 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+@font-face {
+    font-family: sans-serif;
+    font-display: swap;
+}
+
+:root {
+    --qbn-width-full: 1060px;
+    --qbn-width-feed: 640px;
+    --qbn-width-bg: 498px;
+    --qbn-height: 536px;
+    --qbn-pink: #E25A76;
+    --qbn-light-pink: #FEEBEF;
+    --qbn-dark-pink: #BA4961;
+    --qbn-green: #43A457;
+}
+
+#quiz-business-news .main__block {
+    display: flex;
+    position: relative;
+    background-size: cover;
+
+    min-height: var(--qbn-height);
+    margin-bottom: 1em;
+
+    background-image: url(../img/bg1x.png);
+    background-image: -webkit-image-set(
+            url(../img/bg1x.png) 1x,
+            url(../img/bg2x.png) 2x,
+            url(../img/bg4x.png) 4x
+    );
+    background-image: image-set(
+            url(../img/bg1x.png) 1x,
+            url(../img/bg2x.png) 2x,
+            url(../img/bg4x.png) 4x
+    );
+    background-repeat: no-repeat;
+
+    box-shadow: 0 30px 40px rgba(133, 73, 86, 0.210598), 0 0 4px rgba(0, 0, 0, 0.0942595);
+}
+
+#quiz-business-news.is-feed .main__block {
+    max-width: var(--qbn-width-feed);
+    box-shadow: none;
+}
+
+#quiz-business-news .main__wrap {
+    flex-grow: 1;
+}
+
+#quiz-business-news .main__wrap--greeting {
+    background-image: url(../img/money1x.png), url(../img/tinkoff1x.png), url(../img/paper1x.png);
+    background-image: -webkit-image-set(
+            url(../img/money1x.png) 1x,
+            url(../img/money2x.png) 2x,
+            url(../img/money4x.png) 4x
+    ), -webkit-image-set(
+            url(../img/tinkoff1x.png) 1x,
+            url(../img/tinkoff2x.png) 2x,
+            url(../img/tinkoff4x.png) 4x
+    ), -webkit-image-set(
+            url(../img/paper1x.png) 1x,
+            url(../img/paper2x.png) 2x,
+            url(../img/paper4x.png) 4x
+    );
+    background-image: image-set(
+            url(../img/money1x.png) 1x,
+            url(../img/money2x.png) 2x,
+            url(../img/money4x.png) 4x
+    ), image-set(
+            url(../img/tinkoff1x.png) 1x,
+            url(../img/tinkoff2x.png) 2x,
+            url(../img/tinkoff4x.png) 4x
+    ), image-set(
+            url(../img/paper1x.png) 1x,
+            url(../img/paper2x.png) 2x,
+            url(../img/paper4x.png) 4x
+    );
+
+    background-repeat: no-repeat;
+    background-size: 192px 144px, 92px 112px, 432px 416px;
+    background-position: 44% 67%, 67% 12%, right bottom;
+
+}
+
+#quiz-business-news.is-feed .main__wrap--greeting {
+    background-position: 13% 67%, 32% -5%, right bottom;
+    background-size: 160px 119px, 92px 112px, 368px 352px;
+}
+
+
+#quiz-business-news .main__content {
+    display: flex;
+    flex-direction: column;
+}
+
+#quiz-business-news .main__greeting {
+    padding-top: 68px;
+    padding-left: 52px;
+    padding-bottom: 40px;
+    height: 100%;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+
+#quiz-business-news.is-feed .main__greeting {
+    padding-left: 38px;
+    padding-right: 38px;
+}
+
+
+#quiz-business-news .greeting__text {
+    max-width: 510px;
+    position: relative;
+}
+
+#quiz-business-news .greeting__title {
+    font-weight: 900;
+    font-size: 34px;
+    line-height: 40px;
+    padding-top: 20px;
+    max-height: 120px;
+    max-width: 485px;
+}
+
+#quiz-business-news .greeting__description {
+    margin-top: 0.9em;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 400;
+}
+
+#quiz-business-news .greeting__label {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#quiz-business-news .greeting__label-box {
+    position: relative;
+    background-color: var(--qbn-pink);
+    padding: 6px 13px;
+    z-index: 11;
+}
+
+#quiz-business-news .greeting__label-text {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+#quiz-business-news .greeting__label-box-tail {
+    background-color: var(--qbn-dark-pink);
+    position: absolute;
+    left: 76.92%;
+    right: 0;
+    top: 16px;
+    bottom: -7px;
+
+    z-index: 10;
+    transform: skewY(-40deg);
+}
+
+#quiz-business-news .greeting__button {
+    position: relative;
+}
+
+#quiz-business-news .button {
+
+    box-sizing: border-box;
+    outline: none;
+
+    padding: 14px 25px;
+
+    background: #FFFFFF;
+
+    border-radius: 2px;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+
+    cursor: pointer;
+
+    transition: background-color 0.4s ease;
+    width: fit-content;
+
+}
+
+#quiz-business-news .button:focus {
+    border: 1px solid var(--qbn-pink);
+}
+
+#quiz-business-news .button:hover {
+    border: 1px solid var(--qbn-pink);
+    color: var(--qbn-pink);
+}
+
+#quiz-business-news .button:checked {
+    border: 1px solid var(--qbn-pink);
+    color: var(--qbn-pink);
+}
+
+#quiz-business-news .button--start {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    padding: 15px 39px;
+    border: none;
+    box-shadow: 0 15px 22px 0 rgba(121, 54, 68, 0.23);
+}
+
+
+
+#quiz-business-news .questions__answers {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#quiz-business-news .main__container {
+    margin: 25px auto 0;
+
+    max-width: 498px;
+    padding: 4px;
+    position: relative;
+    height: calc(100% - 25px);
+}
+
+#quiz-business-news .container__counter {
+    font-size: 16px;
+    line-height: 19px;
+}
+
+#quiz-business-news .container__title {
+    max-width: 498px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 36px;
+    margin: 16px 0 0;
+}
+
+#quiz-business-news .container__block {
+    margin-top: 31px;
+    margin-bottom: 45px;
+}
+
+#quiz-business-news .question__button {
+    margin-bottom: 10px;
+}
+
+#quiz-business-news .button__answer {
+    border: 1px solid #EDCDD3;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: left;
+}
+
+#quiz-business-news .button__answer--incorrect {
+    text-align: left;
+    font-weight: bold;
+    color: var(--qbn-pink);
+    border: 2px solid var(--qbn-pink);
+    cursor: inherit;
+}
+
+#quiz-business-news .button__answer--correct {
+    text-align: left;
+    font-weight: bold;
+    color: var(--qbn-green);
+    border: 2px solid var(--qbn-green);
+    cursor: inherit;
+}
+
+#quiz-business-news .answer__description {
+    margin-top: 30px;
+    line-height: 23px;
+}
+
+#quiz-business-news .answer__right {
+    font-weight: bold;
+}
+
+
+#quiz-business-news .button__quiz {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    -webkit-background-size: 26px 20px;
+    background-size: 26px 20px;
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    padding: 0 40px 0 0;
+}
+
+#quiz-business-news .button--next {
+
+    background-image: url(../img/arrow1x.png);
+    background-image: -webkit-image-set(
+            url(../img/arrow1x.png) 1x,
+            url(../img/arrow2x.png) 2x,
+            url(../img/arrow4x.png) 4x
+    );
+    background-image: image-set(
+            url(../img/arrow1x.png) 1x,
+            url(../img/arrow2x.png) 2x,
+            url(../img/arrow4x.png) 4x
+    );
+}
+
+#quiz-business-news .button--next:hover {
+    color: var(--qbn-pink);
+}
+
+#quiz-business-news .button__quiz:hover {
+    border: none;
+}
+
+#quiz-business-news .question__button--next {
+    min-width: 160px;
+    text-align: left;
+    margin: 0;
+    position: absolute;
+    bottom: 48px;
+}
+
+#quiz-business-news.is-feed .main__container {
+    width: 100%;
+    max-width: none;
+    padding: 25px 38px;
+    margin: 0;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+#quiz-business-news .result__title {
+    margin-top: 62px;
+    max-width: 333px;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+#quiz-business-news .result__social {
+    margin-top: 41px;
+    display: flex;
+}
+
+#quiz-business-news .button-social {
+    min-width: 60px;
+    min-height: 50px;
+
+    padding: 14px 18px 14px 42px;
+    background: #FFFFFF;
+    box-shadow: 0 15px 22px rgba(121, 54, 68, 0.225628);
+    border-radius: 2px;
+
+    border: none;
+    margin-right: 15px;
+
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 20px;
+    text-decoration: none;
+}
+
+#quiz-business-news .button-social--fb {
+    color: #4267B2;
+
+    background-image: url(../img/fb1x.png);
+    background-image: -webkit-image-set(
+            url(../img/fb1x.png) 1x,
+            url(../img/fb2x.png) 2x,
+            url(../img/fb4x.png) 4x
+    );
+    background-image: image-set(
+            url(../img/fb1x.png) 1x,
+            url(../img/fb2x.png) 2x,
+            url(../img/fb4x.png) 4x
+    );
+
+    background-repeat: no-repeat;
+
+    background-position: 10% 50%;
+}
+
+#quiz-business-news .button-social--vk {
+    color: #5B88BD;
+
+    background-image: url(../img/vk1x.png);
+    background-image: -webkit-image-set(
+            url(../img/vk1x.png) 1x,
+            url(../img/vk2x.png) 2x,
+            url(../img/vk4x.png) 4x
+    );
+    background-image: image-set(
+            url(../img/vk1x.png) 1x,
+            url(../img/vk2x.png) 2x,
+            url(../img/vk4x.png) 4x
+    );
+
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
+}
+
+#quiz-business-news .button-social--twitter {
+    color: #1DA1F2;
+
+    background-image: url(../img/twitter1x.png);
+    background-image: -webkit-image-set(
+            url(../img/twitter1x.png) 1x,
+            url(../img/twitter2x.png) 2x,
+            url(../img/twitter4x.png) 4x
+    );
+    background-image: image-set(
+            url(../img/twitter1x.png) 1x,
+            url(../img/twitter2x.png) 2x,
+            url(../img/twitter4x.png) 4x
+    );
+
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
+}
+
+#quiz-business-news .button--retry {
+    min-width: 190px;
+    background-image: url(../img/retry1x.png);
+    background-image: -webkit-image-set(
+            url(../img/retry1x.png) 1x,
+            url(../img/retry2x.png) 2x,
+            url(../img/retry4x.png) 4x
+    );
+    background-image: image-set(
+            url(../img/retry1x.png) 1x,
+            url(../img/retry2x.png) 2x,
+            url(../img/retry4x.png) 4x
+    );
+
+    -webkit-background-size: 21px 21px;
+    background-size: 21px 21px;
+    padding-right: 30px;
+
+}
+
+#quiz-business-news .main__wrap--result {
+    background-repeat: no-repeat;
+    background-position: 96% 41%;
+}
+
+#quiz-business-news .main__wrap--football {
+    background-image: url(../img/football1x.png);
+    background-image: -webkit-image-set(
+            url(../img/football1x.png) 1x,
+            url(../img/football2x.png) 2x,
+            url(../img/football4x.png) 4x
+    );
+    background-image: image-set(
+            url(../img/football1x.png) 1x,
+            url(../img/football2x.png) 2x,
+            url(../img/football4x.png) 4x
+    );
+    background-position: 108% 102%;
+}
+
+#quiz-business-news.is-feel .main__wrap--football {
+    background-size: 545px 478px;
+    background-position: 141% 62%;
+}
+
+#quiz-business-news .main__wrap--girl {
+    background-image: url(../img/girl1x.png);
+    background-image: -webkit-image-set(
+            url(../img/girl1x.png) 1x,
+            url(../img/girl2x.png) 2x,
+            url(../img/girl4x.png) 4x
+    );
+    background-image: image-set(
+            url(../img/girl1x.png) 1x,
+            url(../img/girl2x.png) 2x,
+            url(../img/girl4x.png) 4x
+    );
+}
+
+#quiz-business-news.is-feed .main__wrap--girl {
+    background-position: 141% 65%;
+}
+
+#quiz-business-news .main__wrap--man-with-paper {
+    background-image: url(../img/man-with-paper1x.png);
+    background-image: -webkit-image-set(
+            url(../img/man-with-paper1x.png) 1x,
+            url(../img/man-with-paper2x.png) 2x,
+            url(../img/man-with-paper4x.png) 4x
+    );
+    background-image: image-set(
+            url(../img/man-with-paper1x.png) 1x,
+            url(../img/man-with-paper2x.png) 2x,
+            url(../img/man-with-paper4x.png) 4x
+    );
+    background-position: 106% 73%;
+}
+
+#quiz-business-news.is-feed .main__wrap--man-with-paper {
+    background-image: url(../img/man-with-laptop1x.png);
+    background-image: -webkit-image-set(
+            url(../img/man-with-laptop1x.png) 1x,
+            url(../img/man-with-laptop2x.png) 2x,
+            url(../img/man-with-laptop4x.png) 4x
+    );
+    background-image: image-set(
+            url(../img/man-with-laptop1x.png) 1x,
+            url(../img/man-with-laptop2x.png) 2x,
+            url(../img/man-with-laptop4x.png) 4x
+    );
+    background-position: right bottom;
+}
+
+#quiz-business-news .main__wrap--man-with-phone {
+    background-image: url(../img/man-with-phone1x.png);
+    background-image: -webkit-image-set(
+            url(../img/man-with-phone1x.png) 1x,
+            url(../img/man-with-phone2x.png) 2x,
+            url(../img/man-with-phone4x.png) 4x
+    );
+    background-image: image-set(
+            url(../img/man-with-phone1x.png) 1x,
+            url(../img/man-with-phone2x.png) 2x,
+            url(../img/man-with-phone4x.png) 4x
+    );
+    background-position: 108% -9%;
+}
+
+#quiz-business-news.is-feed .main__wrap--man-with-phone {
+    background-size: 512px 433px;
+    background-position: 124% 64%;
+}
+
+#quiz-business-news .main__wrap--hand {
+    background-image: url(../img/hand1x.png);
+    background-image: -webkit-image-set(
+            url(../img/hand1x.png) 1x,
+            url(../img/hand2x.png) 2x,
+            url(../img/hand4x.png) 4x
+    );
+    background-image: image-set(
+            url(../img/hand1x.png) 1x,
+            url(../img/hand2x.png) 2x,
+            url(../img/hand4x.png) 4x
+    );
+    background-position: 106% 66%;
+}
+
+#quiz-business-news.is-feed .main__wrap--hand {
+    background-repeat: no-repeat;
+    background-size: 310px 326px;
+    background-position: 108% 70%;
+}
+
+@media (min-width: 781px) and (max-width: 945px) {
+    #quiz-business-news .main__wrap--greeting {
+        background-position: 35% 67%, 47% top, right bottom;
+        background-size: 176px 128px, 92px 112px, 400px 384px;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 780px) {
+    #quiz-business-news .main__wrap--greeting {
+        background-position: 13% 67%, 47% top, right bottom;
+        background-size: 176px 128px, 92px 112px, 400px 384px;
+    }
+}
+
+@media (max-width: 640px) {
+    #quiz-business-news .main__wrap--greeting {
+        background-position: 13% 67%, 32% -5%, right bottom;
+        background-size: 160px 119px, 92px 112px, 368px 352px;
+    }
+
+    #quiz-business-news .main__greeting {
+        padding: 68px 38px 40px;
+    }
+}
+
+@media (max-width: 550px) {
+    #quiz-business-news .main__wrap--greeting {
+        background-image: url(../img/money1x.png), url(../img/tinkoff1x.png);
+    }
+
+    #quiz-business-news .main__greeting {
+        padding: 40px 25px 25px;
+    }
+
+    #quiz-business-news .greeting__title {
+        font-size: 25px;
+    }
+
+    #quiz-business-news .greeting__description {
+        font-size: 16px;
+    }
+
+    #quiz-business-news .main__container {
+        padding: 25px 38px;
+        margin: 0;
+    }
+
+    #quiz-business-news .container__counter {
+        font-size: 12px;
+    }
+
+    #quiz-business-news .container__title {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    #quiz-business-news .button__answer {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    #quiz-business-news .button__answer--correct {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    #quiz-business-news .button__answer--incorrect {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    #quiz-business-news .button {
+        padding: 10px 15px;
+    }
+
+    #quiz-business-news .question__button--next {
+        padding: 0 40px 0 0;
+    }
+
+    #quiz-business-news .button-social--fb{
+        font-size: 0;
+        background-position: 50% 50%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    #quiz-business-news .main__wrap--result {
+        background: none;
+    }
+}
+
+#quiz-business-news .button--hidden {
+    visibility: hidden;
+}
+

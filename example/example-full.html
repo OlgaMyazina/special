@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style-full.css" type="text/css">
+    <title>vc.ru special business news</title>
+</head>
+<body>
+<div class="page">
+    <header class="header">
+        <div class="header__logo">
+            <img srcset="img/logo2x.png 2x, img/logo4x.png 4x" src="img/logo1x.png" alt="Логотип vc.ru">
+        </div>
+        <div class="header__main">
+            <div class="header__part">
+                <nav class="header__nav nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#" class="nav__link nav__link--active">Популярное</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link notification notification--pink">Свежее</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__clubs">
+                    <button class="header__button--left button-menu button-menu--blogs">Блоги</button>
+                </div>
+            </div>
+            <div class="header__part">
+                <div class="header__search search">
+                    <div class="search__icon"></div>
+                    <input type="text" class="search__text" placeholder="Поиск">
+                </div>
+                <button class="header__button--right button-menu button-menu--write">Написать</button>
+                <div class="header__sign">
+                    <div class="header__sign-icon"></div>
+                    <div class="header__sign-text">Войти</div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main-wrapper">
+            <div class="quiz-business-news qbn" id="quiz-business-news"></div>
+            <script>
+              const link = document.createElement("link");
+              link.href = "../dist/all.min.css";
+              link.type = "text/css";
+              link.rel = "stylesheet";
+              document.querySelector("head").appendChild(link);
+            </script>
+            <script src="../dist/all.min.js"></script>
+        </div>
+    </main>
+</div>
+</body>
+</html>
+
+
