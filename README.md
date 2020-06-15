@@ -1,4 +1,11 @@
+## Посмотреть пример работы виджета
+- в полной версии
+https://olgamyazina.github.io/special/example/example-full.html
 
+- в части страницы
+https://olgamyazina.github.io/special/example/example-feed.html
+
+Обратите внимание, что используется localstorage, чтобы продожить квиз позже
 
 ## Инструкции по установке
 
@@ -18,11 +25,6 @@
 
 
 ## Инструкция для разработки
-
-- Скопировать репозиторий:
-```
-https://github.com/OlgaMyazina/special.git
-```
 
 - Запустить команду:
 ```
