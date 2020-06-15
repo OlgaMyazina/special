@@ -216,7 +216,6 @@
 }
 
 
-
 #quiz-business-news .questions__answers {
     display: flex;
     flex-direction: column;
@@ -277,6 +276,15 @@
     color: var(--qbn-green);
     border: 2px solid var(--qbn-green);
     cursor: inherit;
+}
+
+#quiz-business-news .button__answer--incorrect:hover {
+    border: 2px solid var(--qbn-pink);
+}
+
+#quiz-business-news .button__answer--correct:hover {
+    color: var(--qbn-green);
+    border: 2px solid var(--qbn-green);
 }
 
 #quiz-business-news .answer__description {
@@ -371,6 +379,10 @@
     font-size: 17px;
     line-height: 20px;
     text-decoration: none;
+}
+
+#quiz-business-news .button-social:hover {
+    border: none;
 }
 
 #quiz-business-news .button-social--fb {
@@ -646,7 +658,7 @@
         padding: 0 40px 0 0;
     }
 
-    #quiz-business-news .button-social--fb{
+    #quiz-business-news .button-social--fb {
         font-size: 0;
         background-position: 50% 50%;
     }
